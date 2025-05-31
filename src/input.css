@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-400 font-mono;
+  }
+  h1 {
+    @apply text-xl font-medium text-white;
+  }
+}
+
+@layer components {
+  .card-text {
+    @apply space-y-6 leading-relaxed;
+  }
+  .card {
+    @apply border p-8 rounded-lg border-zinc-700 hover:bg-zinc-700 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110  duration-200 justify-center;
+  }
+ 
+}
